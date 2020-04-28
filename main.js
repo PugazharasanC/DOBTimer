@@ -17,12 +17,17 @@ function getTimer() {
             }
             document.getElementById('year').innerHTML = year + 'Years';
             document.getElementById('month').innerHTML = month + 'Month'
-            document.getElementById('days').innerHTML = days + 'Days'
-            document.getElementById('hours').innerHTML = hrs + 'Hrs'
-            document.getElementById('mins').innerHTML = mins + 'Mins'
+            document.getElementById('days').innerHTML = days + 'Days';
+            document.getElementById('hours').innerHTML = hrs + 'Hrs';
+            document.getElementById('mins').innerHTML = mins + 'Mins';
             document.getElementById('secs').innerHTML = secs + ' Secs';
         } else {
             document.getElementById('year').innerHTML = 'You\'re not yet born';
+            document.getElementById('month').innerHTML = '';
+            document.getElementById('days').innerHTML = '';
+            document.getElementById('hours').innerHTML = '';
+            document.getElementById('mins').innerHTML = '';
+            document.getElementById('secs').innerHTML = '';
         }
     }, 1000)
 }
