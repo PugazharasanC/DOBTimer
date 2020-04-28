@@ -15,6 +15,12 @@ function getTimer() {
                 year-=1;
                 month = 12*year + (12+month);
             }
+            else if(month == 0){
+                month = 12*year;
+            }
+            else{
+                month = 12*year+month;
+            }
             document.getElementById('year').innerHTML = year + 'Years';
             document.getElementById('month').innerHTML = month + 'Months'
             document.getElementById('days').innerHTML = days + 'Days';
