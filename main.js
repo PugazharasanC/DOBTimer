@@ -11,7 +11,7 @@ function getTimer() {
             var hrs = Math.floor((diff) / (3600000));
             var mins = Math.floor(diff / (60000));
             var secs = Math.floor(diff / 1000);
-            if(month<0){
+            if(month<=0){
                 year-=1;
                 month = 12*year + 12+month;
             }
